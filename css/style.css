@@ -1,0 +1,58 @@
+.carousel {
+  overflow: hidden;
+  width: 600px;
+  height: 358px;
+  position: relative;
+}
+/*图片容器样式*/
+.carousel .img-container {
+  width: 100%;
+  height: 100%;
+}
+.carousel .img-container li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -600px;
+  opacity: .5;
+}
+.carousel .img-container li img {
+  width: 100%;
+  height: 100%;
+}
+.carousel .img-container .on {
+  left: 0;
+  opacity: 1;
+  /*transition: left 1s;*/
+  transition: opacity 1s;
+}
+/*原点样式*/
+.carousel .img-idx-spot {
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
+}
+.carousel .img-idx-spot li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  background: #DBDBDB;
+  border-radius: 50%;
+  color: #666;
+  cursor: pointer;
+}
+.carousel .img-idx-spot li + li {
+  margin-left: 10px;
+}
+.carousel .img-idx-spot .actives {
+  background: #FFF;
+  border: 1px solid #DBDBDB;
+}
+/*左右箭头*/
+/*.carousel a {
+position: absolute;
+left: 0;
+top: 50%;
+color: #FFF;
+cursor: pointer;
+}*/
