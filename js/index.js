@@ -14,7 +14,7 @@ avalon.ready(function() {
       vm.move = !vm.move
     },
     "loop": function() {
-      var cur = vm.imgsList.length
+      var cur = vm.imgsList.length - 1
       if (vm.cur) {
         vm.cur--
       } else {
@@ -25,6 +25,7 @@ avalon.ready(function() {
       vm.cur = idx
     },
   })
+
   setInterval(function() {
     vm.loop()
   }, 3000)

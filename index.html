@@ -10,12 +10,15 @@
   <body class="ms-controller" ms-controller="carousel">
     <div class="carousel">
       <ul class="img-container">
-        <li ms-class="@cur == idx ? 'on' : ''" ms-for="(idx, item) in @imgsList">
+        <li ms-class="@cur == idx ? 'on' : ''"
+            ms-for="(idx, item) in @imgsList">
           <img ms-attr="{src: item.url}">
         </li>
       </ul>
       <ul class="img-idx-spot">
-        <li ms-class="@cur == idx ? 'actives' : ''" ms-for="(idx, item) in @imgsList" :click="jump(idx)"></li>
+        <li ms-class="@cur == idx ? 'actives' : ''"
+            ms-for="(idx, item) in @imgsList"
+            :click="jump(idx)"></li>
       </ul>
       <!-- <a :click="@left">left</a> -->
     </div>

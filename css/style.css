@@ -14,7 +14,7 @@
   height: 100%;
   position: absolute;
   left: -600px;
-  opacity: .5;
+  /*opacity: .5;*/
 }
 .carousel .img-container li img {
   width: 100%;
